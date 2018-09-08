@@ -1,0 +1,136 @@
+.loader {
+	border: 16px solid #f3f3f3; /* Light grey */
+	border-top: 16px solid #3498db; /* Blue */
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+	animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.animalContainer {
+	position: relative;
+	padding: 15px;
+	width: 180px;
+	height: 180px;
+}
+
+.face {
+	position: absolute;
+	background-color: #deb887;
+	border-radius: 40%;
+	width: 120px;
+	height: 120px;
+}
+
+.leftEar {
+	background-color: black;
+	position: absolute;
+	top: -5px;
+	left: -5px;
+	border-radius: 10%;
+	width: 40px;
+	height: 40px;
+	animation: spinEar 1s ease-in 0.4s infinite;
+}
+
+.rightEar {
+	background-color: black;
+	position: absolute;
+	top: -5px;
+	right: -5px;
+	border-radius: 10%;
+	width: 40px;
+	height: 40px;
+	animation: spinEar 1s ease-out 0.2s infinite;
+}
+
+@keyframes spinEar {
+	0% {
+		transform: rotate(0deg);
+	}
+	40% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.leftEye {
+	background-color: black;
+	position: absolute;
+	top: 50px;
+	left: 30px;
+	border-radius: 50%;
+	width: 10px;
+	height: 10px;
+	animation: blink 5s ease-out infinite;
+}
+
+.rightEye {
+	background-color: black;
+	position: absolute;
+	top: 50px;
+	right: 30px;
+	border-radius: 50%;
+	width: 10px;
+	height: 10px;
+	animation: blink 5s ease-out infinite;
+}
+
+@keyframes blink {
+	0% {
+		height: 10px;
+	}
+	90% {
+		height: 10px;
+	}
+	95% {
+		height: 1px;
+	}
+	100% {
+		height: 10px;
+	}
+}
+
+.nose {
+	background-color: black;
+	position: absolute;
+	top: 50%;
+	right: 46%;
+	border-radius: 50%;
+	width: 15px;
+	height: 7px;
+}
+
+.tongue {
+	background-color: pink;
+	position: absolute;
+	top: 65%;
+	right: 47%;
+	border-radius: 10%;
+	width: 10px;
+	height: 15px;
+	animation: tongue 1s linear infinite;
+}
+
+@keyframes tongue {
+	0% {
+		height: 1px;
+	}
+	50% {
+		height: 15px;
+	}
+	100% {
+		height: 1px;
+	}
+}
