@@ -1,4 +1,4 @@
-//https://api.inaturalist.org/v1/observations/16088460
+// https://api.inaturalist.org/v1/observations/16088460
 // results[0].photos[0].url
 // "https://static.inaturalist.org/photos/24098279/square.jpg?1535771973"
 // swap square for large
@@ -9,7 +9,6 @@ function getObservationData(observationId) {
 		fetch(`https://api.inaturalist.org/v1/observations/${observationId}`)
 			.then(res => res.json())
 			.then(data => {
-				console.log(data);
 				let observationData = {};
 				observationData.sqImageUrl = data.results[0].photos[0].url;
 				observationData.speciesGuess = data.results[0].species_guess;
@@ -43,7 +42,6 @@ function getObservationData(observationId) {
 				return observationData;
 			})
 			.then(observationData => {
-				console.log(observationData);
 				this.setState({
 					isLoaded: true,
 					imgUrl: observationData.lgImageUrl,

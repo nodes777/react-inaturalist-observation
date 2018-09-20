@@ -45,7 +45,8 @@ class Observation extends Component {
 				<div>
 					<h2>{commonName}</h2>
 					<h3>{scientificName}</h3>
-					<img src={this.state.imgUrl} alt={this.state.imgAlt} />;
+					<img src={imgUrl} alt={imgAlt} />;
+					<p>{location}</p>
 				</div>
 			);
 		}

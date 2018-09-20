@@ -1,6 +1,6 @@
 # react-inaturalist-observation
 
-A simple component to display an [iNaturalist Observation](https://www.inaturalist.org). Pass in an observation id to get a component which displays:
+A simple React component to display an [iNaturalist Observation](https://www.inaturalist.org). Pass in an observation id to get a component which displays:
 
 * Common Name
 * Scientific Name
